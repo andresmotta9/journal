@@ -16,10 +16,10 @@ export const NothingSelectedView = () => {
         justifyContent: 'center',
       }}
     >
-      <Grid item>
+      <Grid>
         <StarOutline sx={{ fontSize: 100, color: 'white' }} />
       </Grid>
-      <Grid item>
+      <Grid>
         <Typography color="white" variant="h5">
           Select or create a note
         </Typography>
