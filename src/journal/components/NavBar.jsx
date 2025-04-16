@@ -3,7 +3,7 @@ import { LogoutOutlined, MenuOutlined } from '@mui/icons-material';
 import { useDispatch } from 'react-redux';
 import { startLogout } from '../../store/auth';
 
-export const NavBar = ({ drawerWidth }) => {
+export const NavBar = ({ drawerWidth, handleDrawerToggle }) => {
   const dispatch = useDispatch();
 
   const onLogout = () => {
@@ -22,6 +22,7 @@ export const NavBar = ({ drawerWidth }) => {
           color="inherit"
           edge="start"
           sx={{ mr: 2, display: { sm: 'none' } }}
+          onClick={handleDrawerToggle}
         >
           <MenuOutlined />
         </IconButton>
